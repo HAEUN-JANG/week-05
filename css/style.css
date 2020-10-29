@@ -3,13 +3,24 @@
     padding: 0;
 }
 
-/* header{
+.first-header {
     position: fixed;
-} */
+    width: 100%;
+    top: 0;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.first-header>h1 {
+    text-align: center;
+    padding: 30px 150px;
+    color: rgb(78, 78, 78);
+}
 
 header {
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
     width: 100%;
     height: 80px;
@@ -17,13 +28,13 @@ header {
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 1px 4px rgba(73, 71, 71, 0.781);
+    /* border-bottom: 4px solid rgb(182, 180, 180); */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #d9d9d9;
     z-index: 10;
 }
 
 .banner {
-    margin: 81px auto;
+    margin: 160px auto;
     width: 80%;
     height: 450px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -88,24 +99,26 @@ header {
 #menu-button>.bar {
     width: 100%;
     height: 4px;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(78, 78, 78);
     border-radius: 1.5px;
     margin: 3.5px auto;
 }
 
 #side-menu {
     position: fixed;
-    top: 81px;
+    height: 500px;
+    top: 160px;
     left: 9vw;
-    bottom: 0;
+    /* bottom: 0; */
     width: 150px;
-    background-color: rgb(134, 130, 130);
-    padding: 30px 30px;
-    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #d9d9d9;
     transition-duration: 800ms;
     z-index: 2;
     overflow: auto;
-    border: 4px solid rgb(104, 102, 102);
+    width: 200px;
 }
 
 #side-menu.hidden {
@@ -126,14 +139,15 @@ header {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
 }
 
 #side-menu>ul>li>a:hover {
     font-weight: bold;
     color: #222;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     color: brown;
 }
 
@@ -158,15 +172,15 @@ header {
 .item {
     margin: 0 12px;
     font-weight: bold;
-    color: rgb(43, 42, 42);
-    font-size: 18px;
+    color: rgb(78, 78, 78);
+    font-size: 20px;
 }
 
 .item:hover {
     cursor: pointer;
     font-size: larger;
     text-decoration: none;
-    border-bottom: 3px solid rgb(43, 42, 42);
+    border-bottom: 3px solid rgb(78, 78, 78);
     width: auto;
 }
 
@@ -174,7 +188,7 @@ footer {
     background-color: #777;
     text-align: center;
     color: white;
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: -35px auto;
 }
